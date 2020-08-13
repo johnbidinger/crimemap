@@ -1,0 +1,4 @@
+.env
+.flaskenv
+wsgi.py
+*.pyc
