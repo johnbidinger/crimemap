@@ -1,6 +1,6 @@
 import pymysql
 import dbconfig
-connection = pymysql.connect(hots='localhost',
+connection = pymysql.connect(host='localhost',
                             user=dbconfig.db_user,
                             passwd=dbconfig.db_password)
 
@@ -19,7 +19,7 @@ updated_at TIMESTAMP,
 PRIMARY KEY (id)
 )"""
                 cursor.execute(sql);
-            connection.commit()
-       finally:
-            connection.close()
+                connection.commit()
+finally:
+        connection.close()
 
