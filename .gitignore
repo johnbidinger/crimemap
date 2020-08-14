@@ -2,3 +2,4 @@
 .flaskenv
 wsgi.py
 *.pyc
+dbconfig.py
